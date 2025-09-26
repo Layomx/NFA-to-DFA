@@ -63,6 +63,27 @@ The entry point and user interface for the converter program. Provides a text-ba
 
 ---
 
+## Compile
+You can compile and run this project using any standard C++ compilter. Below are some instructions for compiling with g++ from the terminal.
+1. Open a terminal
+- Windows: Use Command Prompt, PowerShell or Windows Terminal. If you don't have `g++`, install MinGW or use WSL.
+- Linux/macOS: Open your preferred terminal.
+2. Navigate to the project directory
+```cd path/to/NFA-to-DFA```
+3. Compile the project
+Run the following command to compile all `.cpp` fles and produce an executable named `nfa_to_da`: g++ -std=c++11 -o nfa_to_dfa main.cpp AFNDtoAFD.cpp
+In Windows you should use `nfa_to_dfa.exe` as output name
+4. Run the program
+- Windows: nfa_to_dfa.exe
+- Linux/macOS: ./nfa_to_dfa
+
+Notes
+- Make sure you have g++ installed. You can check by running g++ --version.
+- If you use another compiler (like MSVC or Clang), adjust the command accordingly.
+- If you use VS Code, you can also use the built-in terminal and tasks to automate compilation.
+
+---
+
 ## Misc
 
 This project was developed as a mini-project for my university course "Lenguajes Formales, Compiladores y Autómatas."  
